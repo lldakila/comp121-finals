@@ -1,0 +1,387 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.web-name{
+  z-index: 2;
+  position: relative;
+  margin-bottom: 2vh;
+  margin-left: 50px;
+  font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+.web-name a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+}
+.web-name p{
+  color: #fff;
+  opacity: 0.8;
+  font-size: 0.8125rem;
+  margin-bottom: 0;
+  margin: 0 0 1.5em;
+  padding: 0;
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: 400;
+    line-height: 1.66
+}
+
+/* main body */
+.main-body{
+  margin: 0 auto;
+  -webkit-display: -webkit-flex;
+  flex-direction: column;
+	-webkit-box-orient: vertical;
+  display: block;
+  max-width: 1200px;
+  background: white;
+
+}
+.small-wrapper{
+  border-right:1px solid #e6e6e6;
+}
+
+nav{
+  min-height: 10vh;
+  background: white;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px #e6e6e6 solid;
+}
+.main-nav ul{
+  list-style: none;
+  background: #fff;
+  margin: 0;
+  padding: 0 1.5em;
+  text-align: left;
+}
+.main-nav li{
+  display: inline;
+  padding: 0 10px;
+}
+.main-nav li a{
+  padding: 0.5em 0;
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+  line-height: 1.66;
+  font-size: 1rem;
+
+}
+
+.main-nav li a:hover{
+  color: #ccc;
+}
+.main-nav li a:active{
+  color: #ccc;
+}
+
+/* main content */
+#small-wrapper{
+  display: -webkit-box;
+  -webkit-box-orient:vertical;
+}
+
+section,
+aside {
+  background-color: #ffffff;
+  color: ;
+  padding: 3em 1.5em;
+  margin: 1% 0;
+  font-size: 15px;
+}
+
+section {
+  width: 25%;
+}
+
+aside {
+  width: 75%;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient:horizontal;
+}
+/* reccent blog */
+.section1,
+.aside2 {
+  background-color: #ffffff;
+  color: ;
+  padding: 3em 1.5em;
+  margin: 1% 0;
+}
+
+.aside2 {
+  -webkit-flex: 2 1 500px;
+  -webkit-box-flex: 2;
+  -ms-flex: 2 1 500px;
+  flex: 2 1 500px;
+  
+}
+
+.section1 {
+  -webkit-flex: 1 2 250px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 2 250px;
+  flex: 1 2 250px;
+}
+
+.container1 {
+  -webkit-display: -webkit-box;
+  -webkit-display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-top: 1px solid #ddd;
+}
+
+
+/* parallax */
+.parallax {
+  -webkit-display: -webkit-box;
+  -webkit-display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: flex-end;
+    /* The image used */
+    background-image: url("img_parallax.jpg");
+
+    /* Set a specific height */
+    min-height: 90vh; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+li{
+  list-style: none;
+}
+.cb-slideshow,
+.cb-slideshow:after { 
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    top: 0;
+    left: 0;
+    z-index: 0; 
+}
+.cb-slideshow:after { 
+    content: '';
+    background: rgba(0, 0, 0, 0.43);
+    height: 90vh; 
+}
+.cb-slideshow li span { 
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+  -webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation 33s linear infinite 0s;
+    animation: imageAnimation 33s linear infinite 0s; 
+}
+
+/*love live */
+.cb-slideshow li:nth-child(1) span { 
+    background-image: url(http://img5.onnada.com/201702/1850095212_e15cb8cb_200837.jpg); 
+      -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+/*kobayashi*/
+.cb-slideshow li:nth-child(2) span { 
+    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/aa/94/08/aa9408b15ded498ab23f43231fcd13c6.jpg);
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s; 
+}
+/*madoka  */
+.cb-slideshow li:nth-child(3) span { 
+    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/64/5b/89/645b892b6e9e913a93618c5dcd873ba3.jpg);
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s; 
+}
+/*working!  */
+.cb-slideshow li:nth-child(4) span { 
+    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/1e/e3/1b/1ee31b90211d6fef1b53ee70c1a57a97.jpg);
+    -webkit-animation-delay: 9s;
+    animation-delay: 9s; 
+}
+/*gochuUsa  */
+.cb-slideshow li:nth-child(5) span { 
+    background-image: url(http://www.wallpapermaiden.com/wallpaper/2579/download/1366x768/hoto-kokoa-hoto-moka-aoyama-midori-kafuu-chino-kirima-sharo-gochuumon-wa-usagi-desu-ka.png);
+    -webkit-animation-delay: 12s;
+    animation-delay: 12s; 
+}
+/*oreImo  */
+.cb-slideshow li:nth-child(6) span { 
+    background-image: url(https://images8.alphacoders.com/657/657117.jpg);
+    -webkit-animation-delay: 15s;
+    animation-delay: 15s; 
+}
+/*k-on  */
+.cb-slideshow li:nth-child(7)  span {
+     background-image: url(https://ikilote.net/Vars/Images/Reductions/2009/0605/000052958-1280-1280.jpg);
+    -webkit-animation-delay: 18s;
+    animation-delay: 18s; 
+}
+/*non non biyori  */
+.cb-slideshow li:nth-child(8)  span {
+     background-image: url(https://fanart.tv/fanart/tv/272316/showbackground/non-non-biyori-572172f7a00be.jpg);
+    -webkit-animation-delay: 21s;
+    animation-delay: 21s; 
+}
+/* aiura */
+.cb-slideshow li:nth-child(9)  span {
+     background-image: url(http://www.chuing.net/zboard/revol_getimg.php?id=iani&no=2799&num=0&fc=d35c07a25c7da20acac852446442f994);
+    -webkit-animation-delay: 24s;
+    animation-delay: 24s; 
+}
+/*Kinmoza  */
+.cb-slideshow li:nth-child(10)  span {
+     background-image: url(http://wallpapersin4k.net/wp-content/uploads/2017/01/KINMOZA-Wallpapers-5.jpg);
+    -webkit-animation-delay: 27s;
+    animation-delay: 27s; 
+}
+/*hetalia  */
+.cb-slideshow li:nth-child(11)  span {
+     background-image: url(https://s-media-cache-ak0.pinimg.com/originals/1d/8b/09/1d8b09dcedc762c74df03ddbca7f2c68.jpg);
+    -webkit-animation-delay: 30s;
+    animation-delay: 30s; 
+}
+
+/* Animation for the slideshow images */
+@keyframes imageAnimation { 
+    0% { opacity: 0;
+    animation-timing-function: ease-in; }
+    4.5% { opacity: 1;
+         animation-timing-function: ease-out; }
+    10% { opacity: 1; 
+          animation-timing-function: ease-in; }
+    14.5% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+/* Show at least something when animations not supported */
+.no-cssanimations .cb-slideshow li span{
+	opacity: 1;
+}
+
+.date{
+  color: #bfbfbf;
+  font-size: 12px;
+}
+
+#bottom-footer{
+  font-size: 10px;
+  box-shadow: 3px 0px 5px #ddd inset;
+}
+.w3-container{
+  border-top: 1px solid #ddd; 
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    -webkit-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  section, aside{
+    margin-right: 0;
+    -webkit-flex-basis: auto;
+    -moz-flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    width: 100%;
+  }
+  aside{
+    padding-top: 2px;
+  }
+
+  .container1 {
+    -webkit-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .section1 {
+    margin-right: 0;
+    -webkit-flex-basis: auto;
+    -moz-flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    padding-bottom: 2px;
+  }
+
+  
+}
+
+/* page 2 */
+
+.blog-content{
+  max-width: 1200px; 
+  margin: 0 auto;
+  border: 0 1px 1px 1px solid #e6e6e6;
+  padding-left: 30px;
+  padding-bottom: 50px;
+}
+
+.blog-content p{
+  margin-top: 40px;
+  color: #726e6e;
+}
+.blog-content li{
+  font-size: 16px;
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+.blog-content a{
+  font-size: 18px;
+}
+
+.blog-content h1{
+  font-weight: 200;
+  padding-bottom: 20px;
+}
+
+.blog-content .w3-container p, input,button{
+  font-size: 14px;
+}
+
+.blog-content img{
+  max-width: 502px;
+  max-height: 710px;
+  padding-right: auto;
+  padding-left: auto;
+}
+
+
+.dos{
+  font-size: 14px;
+}
